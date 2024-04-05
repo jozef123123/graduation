@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'museum',
-      home: LayoutScreen(),
+      home:SplashScreen(),
     );
   }
 }

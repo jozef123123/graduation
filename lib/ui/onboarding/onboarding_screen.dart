@@ -34,33 +34,29 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             color: Colors.white,
           ),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Padding(
-                padding: const EdgeInsetsDirectional.only(
-                  top: 100.0,
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset(
-                      "assets/images/logo/logoPhoto.png",
-                      width: 60.0,
-                    ),
-                    SizedBox(width: 5.0),
-                    Column(
-                      children: [
-                        SizedBox(
-                          height: 15.0,
-                        ),
-                        Image.asset(
-                          "assets/images/logo/logoText.png",
-                          width: 120.0,
-                          fit: BoxFit.cover,
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset(
+                    "assets/images/logo/logoPhoto.png",
+                    width: 60.0,
+                  ),
+                  SizedBox(width: 5.0),
+                  Column(
+                    children: [
+                      SizedBox(
+                        height: 15.0,
+                      ),
+                      Image.asset(
+                        "assets/images/logo/logoText.png",
+                        width: 120.0,
+                        fit: BoxFit.cover,
+                      ),
+                    ],
+                  ),
+                ],
               ),
               SizedBox(
                 height: 60.0,
@@ -68,6 +64,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               Container(
                 height: 500.0,
                 child: PageView.builder(
+
                   itemCount: photoContant.length,
                   itemBuilder: (_, index) => Column(
                     children: [
@@ -134,10 +131,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             TextButton(
               onPressed: () {
                 setState(() {
-                  Navigator.push(
+                  Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => HomeScreen(),
+                      builder: (context) => LoginScreen(),
                     ),
                   );
                 });

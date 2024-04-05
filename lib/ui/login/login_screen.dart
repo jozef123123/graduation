@@ -297,7 +297,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                       if (formKey.currentState!.validate()) {
                                         print(emailController.text);
                                         print(passwordController.text);
-                                        Navigator.push(
+                                        Navigator.pushReplacement(
                                           context,
                                           MaterialPageRoute(
                                             builder: (context) => LayoutScreen(),
@@ -500,10 +500,15 @@ class _LoginScreenState extends State<LoginScreen> {
                                       borderRadius:
                                           BorderRadius.circular(10.0)),
                                 ),
-                                Text(
-                                  'Once you check this box you agree with \n our Terms and Conditions',
-                                  style: TextStyle(
-                                    color: Colors.grey,
+                                Container(
+                                  width: MediaQuery.sizeOf(context).width/1.7,
+                                  child: Text(
+                                    maxLines: 2,
+                                    overflow: TextOverflow.ellipsis,
+                                    'Once you check this box you agree with \n our Terms and Conditions',
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
                                   ),
                                 ),
                               ],
