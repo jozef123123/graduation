@@ -33,6 +33,14 @@ class _HomeDetailes_ScreenState extends State<HomeDetailes_Screen> {
           appBar: AppBar(
             backgroundColor: Colors.white,
             elevation: 2.0,
+            leading: IconButton(
+              onPressed: (){
+                AppCubit.get(context).resetAudio();
+                Navigator.pop(context);
+
+                },
+              icon: Icon(Icons.arrow_back),
+            ),
             title: Row(
               children: [
                 Image.asset(

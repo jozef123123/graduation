@@ -405,5 +405,9 @@ class AppCubit extends Cubit<AppState> {
     await audioPlayer.stop();
     emit(AudioStoppedState());
   }
+  void resetAudio() async {
+    await audioPlayer.stop();
+    emit(changeLangState());
+  }
 
 }
