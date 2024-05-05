@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:graduation/ui/home/home_screen.dart';
 import 'package:graduation/ui/login/login_screen.dart';
 
+import '../../shared/constants/app_constants.dart';
+import 'package:graduation/shared/network/local/casheHelper.dart';
 class OnboardingScreen extends StatefulWidget {
   @override
   State<OnboardingScreen> createState() => _OnboardingScreenState();
@@ -129,15 +131,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             TextButton(
-              onPressed: () {
-                setState(() {
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => LoginScreen(),
-                    ),
-                  );
-                });
+              onPressed: () {    setState(() {
+                cashHelper.SavaData(key: 'onboard', value: true);
+              });
+              AppConstants.navigateToAndFinish(context, LoginScreen());
               },
               child: Text(
                 "Skip",
@@ -154,12 +151,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   if( i < 2) {
                     i++;
                   }else{
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => LoginScreen(),
-                      ),
-                    );
+                    setState(() {
+                      cashHelper.SavaData(key: 'onboard', value: true);
+                    });
+                    AppConstants.navigateToAndFinish(context, LoginScreen());
                   }
                 });
               },

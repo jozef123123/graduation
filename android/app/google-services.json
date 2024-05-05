@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1028375288912",
+    "project_id": "museum-y-m",
+    "storage_bucket": "museum-y-m.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028375288912:android:8db7675e39a949c1570555",
+        "android_client_info": {
+          "package_name": "com.example.graduation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXbk5kC0d6CKIskh1v_mNL0UhGFYK49IU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

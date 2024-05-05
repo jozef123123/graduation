@@ -6,7 +6,6 @@ class Assets {
   static const String back21f96b96B8054af7B5049a15916f8af6 = 'assets/images/back/_21f96b96-b805-4af7-b504-9a15916f8af6.jpeg';
   static const String back717301b4485a4986A73d70c89dab1c16 = 'assets/images/back/_717301b4-485a-4986-a73d-70c89dab1c16.jpeg';
   static const String backF0adba1b392d42179ad6A89ee8212d5e = 'assets/images/back/_f0adba1b-392d-4217-9ad6-a89ee8212d5e.jpeg';
-  static const String backITSH31 = 'assets/images/back/ITSH--31.jpg';
   static const String fontsCinzelDecorativeBlack = 'assets/fonts/CinzelDecorative-Black.ttf';
   static const String fontsCinzelDecorativeBold = 'assets/fonts/CinzelDecorative-Bold.ttf';
   static const String fontsCinzelDecorativeRegular = 'assets/fonts/CinzelDecorative-Regular.ttf';
